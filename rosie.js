@@ -1,3 +1,4 @@
+
 //N1
 
 // function nums(arr) {
@@ -49,17 +50,88 @@
 
 //N4
 
+
+
+// function split(num) {
+//     let a=Math.floor(num/2)
+//     let b=num-a
+//     return [a,b]
+// }
+// console.log(split(-9));
+
+
 //N5
+
+// function sortByLength(arr) {
+//     let narr=[...arr].sort((a, b) => a.length - b.length)
+//     return narr
+// }
+// console.log(sortByLength(["aaa","cc","bbbb","d"]));
+
+
 
 //N6
 
-function named(arr) {
-    let newArr = []
-    let narr = [...arr].sort((a, b) => a - b)
-    for (let i = 0; i < narr.length; i++) {
-        newArr.push(narr[i] * 2)
-    }
-    return newArr
-}
-console.log(named([5, 3, 8]));
+// function named(arr) {
+//     let newArr = []
+//     let narr = [...arr].sort((a, b) => a - b)
+//     for (let i = 0; i < narr.length; i++) {
+//         newArr.push(narr[i] * 2)
+//     }
+//     return newArr
+// }
+// console.log(named([5, 3, 8]));
 
+//N7
+
+// function reverseImage(arr) {
+//     let narr=[]
+//     for (let i = arr.length-1; i >= 0; i--) {
+//         let inArr=arr[i]
+//         let revIn=[]
+//         for (let j = inArr.length-1; j >= 0; j--) {
+//             revIn.push(inArr[j])            
+//         }
+//         narr.push(revIn)
+//     }
+//     return narr
+// }
+// console.log(reverseImage([[1,2,3],[4,5,6],[7,8,9]]));
+
+//N8
+
+// function changeNumtoStr(a,b) {
+//     let dict={
+//         1: 'one',
+//         2: 'two',
+//         3: 'three',
+//         4: 'four',
+//         5: 'five',
+//         6: 'six',
+//         7: 'seven',
+//         8: 'eight',
+//         9: 'nine'
+//     }
+//     let arr=[]
+//     for (let i = a; i <= b; i++) {
+//         arr.push(dict[i])
+//     }
+//     return arr
+// }
+// console.log(changeNumtoStr(3,5));
+
+//N9
+
+// function addToArr(num) {
+//     let arr=[]
+//     let resArr=[]
+//     for (let i = 1; i <= num; i++) {
+//         arr.push(i)
+//     }
+//     for (let i = 0; i < arr.length; i+=3) {
+//         let qism = arr.slice(i, i + 3)
+//         resArr.push(qism)
+//     }
+//     return resArr
+// }
+// console.log(addToArr(15));
